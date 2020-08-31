@@ -82,5 +82,65 @@ public class 연산자 {
         System.out.println(d4 == f4); //false (float 타입의 0.1이 double 변환되는 과정에 근사값으로 표현되어 0.1000...0149011...
         System.out.println("d4 *10: "+(int)(d4*10) +" , f4 *10: "+ (int)(f4*10));
         System.out.println((float) d4 == f4); //true
+
+        // 논리연산자
+        // & AND 연산자 T & F  = F
+        // | OR 연산자 T & F = T
+        // ! NOT 연산자  ! T = F, !F = T
+        // ^ XOR 연산자  T ^ F = T, T ^ T = F, F ^ F = F
+        // &&, || 숏 서킷 연산자 : 불필요한 연산자를 줄여서 프로그램의 성능을 좋게함
+
+        // 증감 연산자
+        // //++, --
+        // ++n, --n 전위연산자
+        // n++, n-- 후위 연산자
+        int p = 1;
+        System.out.println(p++); //1
+        System.out.println(++p); //3
+        System.out.println(p); //3
+        System.out.println(--p); //2
+        System.out.println(p--); //2
+        System.out.println(p); //1
+
+
+        // 삼항 연산자
+        // 평가식 ? <표현식1> : <표현식2>
+        // TRUE 일때 표현식1, FALSE 일때 표현식2 수행
+        String result = p<1 ? "true" : "false";
+        System.out.println(result);
+
+        // 비트연산자
+        // & AND 연산자
+        // | OR 연산자
+        // ~ NOT 연산자
+        // ^ XOR 연산자
+
+        int ii1 = 3;
+        int ii2 = 5;
+        System.out.printf("%32s\n", Integer.toBinaryString(ii1)); //11 (3)
+        System.out.printf("%32s\n", Integer.toBinaryString(ii2)); //101 (5)
+        System.out.printf("%32s\n", Integer.toBinaryString(ii1 & ii2)); //1 (1)
+        System.out.printf("%32s\n", Integer.toBinaryString(ii1 | ii2)); //111 (7)
+        System.out.printf("%32s\n", Integer.toBinaryString(ii1 ^ ii2)); //110 (6)
+        System.out.printf("%32s\n", Integer.toBinaryString(~ii1)); //11111111111111111111111111111100
+
+        //  이동 비트 연산자
+        // << 오른쪽으로 피연산자만큼 이동시키고 빈자리는 0으로 채움
+        // >> 오른쪽으로 피연산자만큼 이동시키고 빈자리는 부호 비트로 채움
+        // >>>  >>와 이동은 동일, 빈자리를 0으로 채움
+        int ii3 = 0b1000; //8
+        System.out.printf("%32s\n", Integer.toBinaryString(ii3 << 1)); //10000 (32)
+        System.out.printf("%32s\n", Integer.toBinaryString(ii3 >> 1)); //100 (8)
+        System.out.printf("%32s\n", Integer.toBinaryString(ii3 >>> 1)); //100 (8)
+
+        int ii4 = -100;
+        System.out.printf("%32s\n", Integer.toBinaryString(ii4));          //11111111111111111111111110011100 (-100)
+        System.out.println(ii4 << 1);
+        System.out.printf("%32s\n", Integer.toBinaryString(ii4 << 1));  //11111111111111111111111100111000 (-200) 1개 0 생성
+        System.out.println(ii4 >> 1);
+        System.out.printf("%32s\n", Integer.toBinaryString(ii4 >> 1));  //11111111111111111111111111001110 (-50)
+        System.out.println(ii4 >>> 1);
+        System.out.printf("%32s\n", Integer.toBinaryString(ii4 >>> 1)); //1111111111111111111111111001110 (2147483598)
+
     }
 }
