@@ -11,13 +11,16 @@ public class 생성자_this {
     /* 1. 기본 생성자 */
     String name;
     int age;
+    public 생성자_this() {
     // public class 생성자(){} //생략된 기본 생성자
+    }
 
     /* 2. 파라미터 생성자 */
     생성자_this(String n, int a){
         name = n;
         age = a;
     }
+
 
     /* this 용법 */
     /* 1. 현재 객체를 참조하기 위한 용도 */
