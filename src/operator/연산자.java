@@ -1,3 +1,5 @@
+package operator;
+
 import java.math.BigDecimal;
 
 public class 연산자 {
@@ -84,16 +86,16 @@ public class 연산자 {
         System.out.println((float) d4 == f4); //true
 
         // 논리연산자
-        // & AND 연산자 T & F  = F
-        // | OR 연산자 T & F = T
-        // ! NOT 연산자  ! T = F, !F = T
-        // ^ XOR 연산자  T ^ F = T, T ^ T = F, F ^ F = F
-        // &&, || 숏 서킷 연산자 : 불필요한 연산자를 줄여서 프로그램의 성능을 좋게함
+        // & AND operator.연산자 T & F  = F
+        // | OR operator.연산자 T & F = T
+        // ! NOT operator.연산자  ! T = F, !F = T
+        // ^ XOR operator.연산자  T ^ F = T, T ^ T = F, F ^ F = F
+        // &&, || 숏 서킷 operator.연산자 : 불필요한 연산자를 줄여서 프로그램의 성능을 좋게함
 
-        // 증감 연산자
+        // 증감 operator.연산자
         // //++, --
         // ++n, --n 전위연산자
-        // n++, n-- 후위 연산자
+        // n++, n-- 후위 operator.연산자
         int p = 1;
         System.out.println(p++); //1
         System.out.println(++p); //3
@@ -103,17 +105,17 @@ public class 연산자 {
         System.out.println(p); //1
 
 
-        // 삼항 연산자
+        // 삼항 operator.연산자
         // 평가식 ? <표현식1> : <표현식2>
         // TRUE 일때 표현식1, FALSE 일때 표현식2 수행
         String result = p<1 ? "true" : "false";
         System.out.println(result);
 
         // 비트연산자
-        // & AND 연산자
-        // | OR 연산자
-        // ~ NOT 연산자
-        // ^ XOR 연산자
+        // & AND operator.연산자
+        // | OR operator.연산자
+        // ~ NOT operator.연산자
+        // ^ XOR operator.연산자
 
         int ii1 = 3;
         int ii2 = 5;
@@ -124,7 +126,7 @@ public class 연산자 {
         System.out.printf("%32s\n", Integer.toBinaryString(ii1 ^ ii2)); //110 (6)
         System.out.printf("%32s\n", Integer.toBinaryString(~ii1)); //11111111111111111111111111111100
 
-        //  이동 비트 연산자
+        //  이동 비트 operator.연산자
         // << 오른쪽으로 피연산자만큼 이동시키고 빈자리는 0으로 채움
         // >> 오른쪽으로 피연산자만큼 이동시키고 빈자리는 부호 비트로 채움
         // >>>  >>와 이동은 동일, 빈자리를 0으로 채움

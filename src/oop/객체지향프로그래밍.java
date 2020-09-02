@@ -1,3 +1,5 @@
+package oop;
+
 public class 객체지향프로그래밍 {
     /*
      * 절차지향 프로그래밍 (C언어) / 순차적인 처리

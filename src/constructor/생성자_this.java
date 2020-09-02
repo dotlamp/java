@@ -1,3 +1,5 @@
+package constructor;
+
 public class 생성자_this {
     /*
     * 생성자 : 객체를 생성할 때 일반 멤버 변수의 초기화 또는 실행하는 작업 정리
@@ -25,12 +27,12 @@ public class 생성자_this {
     /* this 용법 */
     /* 1. 현재 객체를 참조하기 위한 용도 */
     /*
-    * 생성자_this(String name, int age){
+    * constructor.생성자_this(String name, int age){
         name = name;
         age = age;
     }
     * // 오류는 발생하지 않지만 경고 출력이 됨. 파라미터의 변수와  멤버 변수와 구분 X
-    * 생성자_this(String name, int age){
+    * constructor.생성자_this(String name, int age){
         this.name = name;
         this.age ( 멤버 변수 의미) = age; (파라미터 변수 의미)
     }
@@ -38,7 +40,7 @@ public class 생성자_this {
     *
     *  2. 다른 생성자를 호출하는 this
     * 객체를 만들면서 초기화하려는 멤버 변수의 종류가 다를 떄 (생성자 오버로딩)
-    * 생성자_this(String n){
+    * constructor.생성자_this(String n){
         this(name, 20);
     }
     * */
@@ -70,5 +72,7 @@ public class 생성자_this {
 
         생성자_this person2 = new 생성자_this("홍길동", 20); // 파라미터 생성자를 이용하여 멤버 변수 초기화
 
+        System.out.println(person1.name+person1.age);
+        System.out.println(person2.name+person2.age);
     }
 }

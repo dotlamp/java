@@ -1,4 +1,6 @@
-public class 멤버변수_클래스변수_인스턴스변수_0 {
+package variable;
+
+public class member_variable {
 
     static void print1(){ //클래스메소드
         System.out.println("클래스 메소드입니다.");

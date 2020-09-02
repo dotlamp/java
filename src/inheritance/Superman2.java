@@ -1,6 +1,8 @@
-public class 상속_Superman2 extends 상속_Superman {
+package inheritance;
 
-    상속_Superman man = new 상속_Superman();
+public class Superman2 extends Superman {
+
+    Superman man = new Superman();
     boolean isSuperman;
 
     public void fly(){

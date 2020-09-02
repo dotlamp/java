@@ -1,17 +1,18 @@
+package variable;
 
-public class 멤버변수_클래스변수_인스턴스변수 {
+public class member_local_variable_call {
 
     public static void main(String[] args){
 
-        멤버변수_클래스변수_인스턴스변수_0.print1(); //인스턴스를 생성하지 않아도 호출 가능
+        member_variable.print1(); //인스턴스를 생성하지 않아도 호출 가능
 
-        멤버변수_클래스변수_인스턴스변수_0 name = new 멤버변수_클래스변수_인스턴스변수_0(); //인스턴스 생성
+        member_variable name = new member_variable(); //인스턴스 생성
         name.print2(); //호출
 
 
-        System.out.println("클래스 변수 a : "+ 멤버변수_클래스변수_인스턴스변수_0.a);
-        멤버변수_클래스변수_인스턴스변수_0 ex1 = new 멤버변수_클래스변수_인스턴스변수_0();
-        멤버변수_클래스변수_인스턴스변수_0 ex2 = new 멤버변수_클래스변수_인스턴스변수_0();
+        System.out.println("클래스 변수 a : "+ member_variable.a);
+        member_variable ex1 = new member_variable();
+        member_variable ex2 = new member_variable();
 
         System.out.println("클래스 변수 ex1.a : "+ex1.a);
         System.out.println("클래스 변수 ex2.a : "+ex2.a);

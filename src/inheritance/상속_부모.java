@@ -1,3 +1,5 @@
+package inheritance;
+
 public class 상속_부모 {
     String x = "parent";
 

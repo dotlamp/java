@@ -1,3 +1,5 @@
+package variable.int_;
+
 public class int에서2_8_16진수변환 {
     public static void main(String[] main){
         int a = 10;

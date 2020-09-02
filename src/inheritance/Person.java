@@ -1,4 +1,6 @@
-public class 상속_Person {
+package inheritance;
+
+public class Person {
     String name;
 
     public void eat(){

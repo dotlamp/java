@@ -1,9 +1,11 @@
+package controlflow;
+
 import java.util.Scanner;
 
 public class 제어문 {
     public static void main(String[] args){
 
-        //제어문 : 프로그램의 흐름을 제어하기 위함, 조건문과 반복문으로 나눔
+        //controlflow.제어문 : 프로그램의 흐름을 제어하기 위함, 조건문과 반복문으로 나눔
         //if문
 
         //switch ~ case문

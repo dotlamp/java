@@ -1,7 +1,9 @@
+package inheritance;
+
 public class 상속_Main {
     public static void main(String[] args){
         /* 부모 */
-        상속_Person person = new 상속_Person();
+        Person person = new Person();
         person.eat();
         person.jump();
         person.run();
@@ -9,7 +11,7 @@ public class 상속_Main {
         System.out.println();
 
         /* 자식 */
-        상속_Superman man = new 상속_Superman();
+        Superman man = new Superman();
         man.fly();
         man.run(); //부모
         man.eat(); //부모
@@ -17,7 +19,7 @@ public class 상속_Main {
         System.out.println();
 
         /* 슈퍼맨1 의 자식 */
-        상속_Superman2 man2 = new 상속_Superman2();
+        Superman2 man2 = new Superman2();
         man2.isSuperman = false;
         man2.fly();
         man2.run(); //부모의 부모

@@ -1,4 +1,6 @@
-public class 상속_Superman extends 상속_Person {
+package inheritance;
+
+public class Superman extends Person {
 
     boolean isSuperman;
 

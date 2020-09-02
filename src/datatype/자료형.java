@@ -1,3 +1,5 @@
+package datatype;
+
 public class 자료형 {
     public static void main(String[] args){
         //자료형의 종류  (파라미터 지시자 )

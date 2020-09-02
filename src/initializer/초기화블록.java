@@ -1,3 +1,5 @@
+package initializer;
+
 public class 초기화블록 {
 
     /* 초기화 블록(initializer) : 생성자 처럼 멤버 변수 초기화 */
@@ -29,13 +31,13 @@ public class 초기화블록 {
 
     public static void main(String[] args){
         초기화블록 it1 = new 초기화블록();
-        System.out.printf("객체 1 생성 후 a: %d, b: %d\n", it1.a, 초기화블록.b);
+        System.out.printf("객체 1 생성 후 a: %d, b: %d\n", it1.a, initializer.초기화블록.b);
         초기화블록 it2 = new 초기화블록();
-        System.out.printf("객체 2 생성 후 a: %d, b: %d\n", it2.a, 초기화블록.b);
+        System.out.printf("객체 2 생성 후 a: %d, b: %d\n", it2.a, initializer.초기화블록.b);
 
         /* 컴파일 결과
         * static initializer //클래스가 로딩 되면서 클래스 초기화 블록 동작 하여 멤버 변수 b의 값을 200으로 변경
-          instance initalizer  //main 메서드가 동작하면서 초기화블록 객체를 생성하는 과정에 인스턴스 초기화 블록이 동작해 멤버변수 a값을  100으로 변경
+          instance initalizer  //main 메서드가 동작하면서 initializer.초기화블록 객체를 생성하는 과정에 인스턴스 초기화 블록이 동작해 멤버변수 a값을  100으로 변경
           constructor a: 100, b: 200  //셍성자 내부 코드에 의해 b값을 300으로 초기화 후 객체 생성
           객체 1 생성 후 a: 300, b: 200 //생성된 후 값
           instance initalizer
