@@ -13,4 +13,7 @@ public class Parent {
         this.defaultVar = 3;
         this.privVar = 4;
     }
+    protected void method(){
+
+    }
 }
