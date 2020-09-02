@@ -2,10 +2,14 @@ package singleton;
 
 public class SingletonTest {
     public static void main(String[] args) {
-        SingletonClass sc1 = new SingletonClass.getInstance();
-        SingletonClass sc2 = new SingletonClass.getInstance();
+        /* 딱 한번 호출 됨 */
+        SingletonClass sc1 = SingletonClass.getInstance();
+        SingletonClass sc2 = SingletonClass.getInstance();
 
-        System.out.printf("두 객체 same? %b \n", sc1 == sc2);
-        sc1.sayHello();
+        if(sc1 == sc2){
+            System.out.println("sc1 == sc2");
+        }else {
+            System.out.println("sc != sc2");
+        }
     }
 }
