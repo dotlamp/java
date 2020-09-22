@@ -1,13 +1,20 @@
 package algorithm.backjoon;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class 숫자의합 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int number = sc.nextInt();
+        int size = sc.nextInt();
+        int arr[] = new int[size];
+        int sum = 0;
+        String number = sc.next();
 
+        for(int i=0; i<size; i++){
+            arr[i] = number.charAt(i);
+            sum += arr[i]-48;
+        }
+        System.out.println(sum);
     }
 }
 

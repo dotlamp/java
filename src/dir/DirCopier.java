@@ -13,8 +13,8 @@ public class DirCopier {
     static int iMenu;
 
     DirCopier(){
-        in = new Input();
-        menu();
+        in = new Input(); //Input 객체 인스터스화
+         menu();
     }
 
     void menu(){
